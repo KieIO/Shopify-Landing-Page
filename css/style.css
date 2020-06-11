@@ -8,19 +8,96 @@ body {
 
 .create-task {
   background-color: #f9f0ff; }
+  .create-task__padding {
+    padding: 40px;
+    margin: 0; }
+  .create-task__btn-center {
+    text-align-last: center; }
+  .create-task__text {
+    letter-spacing: 6px; }
+  .create-task__text-fontsize {
+    font-size: 1.3rem; }
+  .create-task__btn {
+    padding: 8px; }
 
-.create-task__padding {
-  padding: 40px;
-  margin: 0; }
+.banner {
+  background-color: #f9f0ff; }
+  .banner__img {
+    height: auto;
+    width: 90%; }
 
-.create-task__btn-center {
-  text-align-last: center; }
+.col-6.banner__container {
+  padding-left: 8rem;
+  padding-right: 3rem;
+  padding-top: 10px; }
 
-.create-task__text {
-  letter-spacing: 6px; }
+.banner__iconImages {
+  padding-top: 20px; }
 
-strong.create-task__text-fontsize {
-  font-size: 1.3rem; }
+.banner__iconImages > img {
+  width: 80px; }
 
-.create-task__btn {
-  padding: 8px; }
+.banner__goToCatalog {
+  padding: 10px 22px;
+  background-color: white;
+  border: 1px solid; }
+
+@media (max-width: 884px) {
+  .banner {
+    background-color: #f9f0ff; }
+    .banner__img {
+      height: 380px;
+      width: 100%; }
+  .col-6.banner__container {
+    padding-left: 3rem;
+    padding-right: 1rem; }
+  .banner__iconImages {
+    padding-top: 20px; }
+  .banner__iconImages > img {
+    width: 70px; }
+  .banner__goToCatalog {
+    padding: 8px 22px;
+    background-color: white;
+    border: 1px solid;
+    width: 155px;
+    height: 38px;
+    font-size: 12px; } }
+
+.statistic {
+  background-color: #f9f0ff; }
+  .statistic__rating {
+    padding: 60px 150px 40px;
+    margin: auto; }
+    .statistic__rating__color1 {
+      color: #6A1B9A; }
+    .statistic__rating__color2 {
+      color: #69727B; }
+    .statistic__rating__img {
+      text-align: center;
+      padding-bottom: 10px; }
+  .statistic__rating .rate1 {
+    margin: auto;
+    text-align: center; }
+  .statistic__rating .rate2 {
+    margin: auto; }
+
+@media (max-width: 884px) {
+  .statistic {
+    background-color: #f9f0ff; }
+    .statistic__rating {
+      padding: 20px 90px 20px;
+      margin: auto; }
+      .statistic__rating__color1 {
+        color: #6A1B9A; }
+      .statistic__rating__color2 {
+        color: #69727B; }
+      .statistic__rating__img {
+        text-align: center;
+        padding-bottom: 10px; }
+      .statistic__rating__font {
+        font-size: 13px; }
+    .statistic__rating .rate1 {
+      margin: auto;
+      text-align: center; }
+    .statistic__rating .rate2 {
+      margin: auto; } }

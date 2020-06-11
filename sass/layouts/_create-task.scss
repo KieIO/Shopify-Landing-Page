@@ -1,27 +1,46 @@
-$color-primary-light: #f9f0ff;
-$color-primary: #6A1B9A;
-
 .create-task{
     background-color: $color-primary-light;
+    
+    &__padding{
+        padding: 40px;
+        margin: 0;
+    }
+
+    &__btn-center{
+        text-align-last: center;
+    }
+
+    &__text{
+        letter-spacing: 6px;
+    }
+
+    &__text-fontsize {
+        font-size: 1.3rem;
+    }
+
+    &__btn{
+        padding: 8px;
+    }
 }
 
-.create-task__padding{
-    padding: 40px;
-    margin: 0;
-}
 
-.create-task__btn-center{
-    text-align-last: center;
-}
+// .create-task__padding{
+//     padding: 40px;
+//     margin: 0;
+// }
 
-.create-task__text{
-    letter-spacing: 6px;
-}
+// .create-task__btn-center{
+//     text-align-last: center;
+// }
 
-strong.create-task__text-fontsize {
-    font-size: 1.3rem;
-}
+// .create-task__text{
+//     letter-spacing: 6px;
+// }
 
-.create-task__btn{
-    padding: 8px;
-}
+// strong.create-task__text-fontsize {
+//     font-size: 1.3rem;
+// }
+
+// .create-task__btn{
+//     padding: 8px;
+// }

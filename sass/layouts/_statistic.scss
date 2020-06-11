@@ -1,0 +1,70 @@
+.statistic {
+    background-color: $color-primary-light;
+
+    &__rating {
+        padding: 60px 150px 40px;
+        margin: auto;
+
+        &__color1 {
+            color: $color-primary;
+        }
+
+        &__color2 {
+            color: $color-gray-light;
+        }
+
+        &__img {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__rating .rate1 {
+        // margin: 0 5rem 0 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__rating .rate2 {
+        margin: auto;
+    }
+}
+
+@media(max-width: 884px) {
+    .statistic {
+        background-color: $color-primary-light;
+
+        &__rating {
+            padding: 20px 90px 20px;
+            margin: auto;
+
+            &__color1 {
+                color: $color-primary;
+            }
+
+            &__color2 {
+                color: $color-gray-light;
+            }
+
+            &__img {
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            &__font{
+                font-size: 13px;
+            }
+        }
+
+        &__rating .rate1 {
+            // margin: 0 5rem 0 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        &__rating .rate2 {
+            margin: auto;
+        }
+    }
+}
+
+// 540
