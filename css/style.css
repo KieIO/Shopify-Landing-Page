@@ -12,15 +12,14 @@ body {
 
 .outer-most {
   padding: 60px 150px; }
-
-.problem_header {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
-  font-weight: 900;
-  text-transform: capitalize;
-  font-family: 'Lato', sans-serif; }
+  .outer-most .problem_header {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif; }
 
 .solution-wrapper {
   display: flex; }
@@ -57,9 +56,39 @@ body {
   margin-top: 40px; }
   .problem-button .button {
     padding: 10px 50px;
-    border: 1px solid #d89918;
-    background: #d89918;
-    color: #fff; }
+    color: #fff;
+    border: 1px solid #6A1B9A;
+    background: #6A1B9A;
+    max-width: 300px;
+    margin: auto; }
+    .problem-button .button a {
+      text-decoration: none;
+      color: #fff; }
+    .problem-button .button:hover {
+      border: 1px solid #6A1B9A;
+      background: transparent; }
+    .problem-button .button:hover a {
+      color: #222; }
+
+@media (max-width: 750px) {
+  .problem {
+    padding: 60px 15px; }
+  .solution-wrapper {
+    flex-wrap: wrap; }
+    .solution-wrapper .about-us-box {
+      width: 100%; } }
+
+@media only screen and (max-width: 749px) {
+  h2 {
+    font-size: 1.28571em; } }
+
+@media (max-width: 769px) {
+  .problem {
+    padding: 60px 40px; }
+  .problem-button .button {
+    text-align: center;
+    padding: 10px 30px;
+    font-size: small; } }
 
 .category {
   width: 100%;
@@ -100,3 +129,28 @@ body {
     .category__button a:hover {
       color: #fff5eb;
       background: #3c3c3c; }
+
+@media (max-width: 750px) {
+  .category {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px; }
+  .category-wrapper .image {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 25px; } }
+
+@media (max-width: 1024px) {
+  .category {
+    width: 100%;
+    padding: 100px 40px 0; } }
+
+@media (max-width: 769px) {
+  .category-wrapper {
+    flex-direction: column; }
+    .category-wrapper .image {
+      width: 100% !important;
+      margin-bottom: 25px; }
+  .category__button {
+    width: 100%; } }
