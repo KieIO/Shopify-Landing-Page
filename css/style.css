@@ -5,3 +5,22 @@
 
 body {
   font-family: 'Nunito', sans-serif; }
+
+.create-task {
+  background-color: #f9f0ff; }
+
+.create-task__padding {
+  padding: 40px;
+  margin: 0; }
+
+.create-task__btn-center {
+  text-align-last: center; }
+
+.create-task__text {
+  letter-spacing: 6px; }
+
+strong.create-task__text-fontsize {
+  font-size: 1.3rem; }
+
+.create-task__btn {
+  padding: 8px; }
