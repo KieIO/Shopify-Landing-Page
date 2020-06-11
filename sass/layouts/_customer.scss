@@ -3,14 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 150px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     &__wrapper {
         text-align: center;
-        width: 100%;
+        width: 80%;
+        padding: 50px 100px
         &__title {
             margin-bottom: 25px;
         }
         .carousel-inner {
+            padding-bottom: 85px;
             .carousel-item {
                 .carousel-item-text {
                     .carousel-item-text-content {
@@ -49,5 +52,12 @@
            .carousel-control-next-icon {
              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236A1B9A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
            }
+    }
+    .carousel-indicators {
+        li {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
     }
 }
