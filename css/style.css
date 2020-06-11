@@ -5,3 +5,58 @@
 
 body {
   font-family: 'Nunito', sans-serif; }
+
+.problem {
+  width: 100%;
+  padding: 60px 150px; }
+
+.outer-most {
+  padding: 60px 150px; }
+
+.problem_header {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif; }
+
+.solution-wrapper {
+  display: flex; }
+  .solution-wrapper .about-us-box {
+    padding: 25px;
+    width: 100%; }
+  .solution-wrapper .about-us-box-inner body {
+    font-size: 14px;
+    font-family: Futura,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #3D4246;
+    line-height: 1.5; }
+  .solution-wrapper .about-us-box .icon-wrap img.iCon {
+    width: 101%; }
+  .solution-wrapper .about-us-box .icon-wrap {
+    width: 80px;
+    height: 80px;
+    background: #f9f0ff;
+    padding: 14px;
+    border-radius: 50px; }
+  .solution-wrapper .about-us-box strong {
+    display: block;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 15px;
+    letter-spacing: .5px; }
+  .solution-wrapper .about-us-box p {
+    margin-top: 15px;
+    font-size: 16px; }
+
+.problem-button {
+  text-align: center;
+  margin-top: 40px; }
+  .problem-button .button {
+    padding: 10px 50px;
+    border: 1px solid #d89918;
+    background: #d89918;
+    color: #fff; }
