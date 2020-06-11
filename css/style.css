@@ -119,15 +119,15 @@ body {
   transition: 1s; }
   .category__button a {
     color: #3c3c3c;
-    background: #fff5eb;
-    border: 1px solid #fff5eb;
+    background: #f9f0ff;
+    border: 1px solid #f9f0ff;
     padding: 5px 15px;
     font-size: 12px;
     letter-spacing: .5px;
     text-transform: uppercase;
     transition: .5s; }
     .category__button a:hover {
-      color: #fff5eb;
+      color: #f9f0ff;
       background: #3c3c3c; }
 
 @media (max-width: 750px) {

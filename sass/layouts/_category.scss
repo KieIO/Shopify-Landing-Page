@@ -32,15 +32,15 @@
     transition: 1s;
     a{
         color: #3c3c3c;
-        background: #fff5eb;
-        border: 1px solid #fff5eb;
+        background: $color-primary-light;
+        border: 1px solid $color-primary-light;
         padding: 5px 15px;
         font-size: 12px;
         letter-spacing: .5px;
         text-transform: uppercase;
         transition: .5s;
         &:hover{
-            color: #fff5eb;
+            color: $color-primary-light;
             background: #3c3c3c;
         }
     }
