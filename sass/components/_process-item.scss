@@ -48,25 +48,24 @@
 .process-item-2 {
     margin-top: 2rem;
 }
- @media (max-width: 1100px) {
-      .process-item {
- &:not(:last-child) {
-        margin-right: 1rem;
-    } 
-      }
- }
 
- @media (max-width: 750px) {
-      .process-item {
-        //   display: flex;
-    
-    &:not(:last-child) {
-        margin-right: 0;
-    }      
-    &__title {
-        font-size: $font-size-title-small;
-        margin-left: 0;
-        text-align: center;
+@media (max-width: 1100px) {
+    .process-item {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
     }
 }
- } 
+
+@media (max-width: 750px) {
+    .process-item {
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+        &__title {
+            font-size: $font-size-title-small;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}

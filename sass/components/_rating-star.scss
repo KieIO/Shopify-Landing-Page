@@ -1,0 +1,27 @@
+.rating-star {
+    &__star {
+        text-align: center;
+        span {
+            color: #e7382b;
+            margin-right: -7px;
+        }
+    }
+    &__text {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .rating-star {
+        &__star {
+            text-align: center;
+            span {
+                color: #e7382b;
+                margin-right: -5px;
+            }
+        }
+        &__text {
+            font-size: .9rem;
+        }
+    }
+}
