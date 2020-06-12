@@ -219,6 +219,155 @@ body {
   .rating-star__text {
     font-size: .9rem; } }
 
+.create-task {
+  background-color: #f9f0ff;
+  justify-content: center;
+  align-items: center; }
+  .create-task__padding {
+    padding: 40px;
+    margin: 0; }
+  .create-task__btn-center {
+    text-align-last: center; }
+  .create-task__text {
+    letter-spacing: 5px;
+    font-size: 1.3rem; }
+  .create-task__text-fontsize {
+    font-size: 1.3rem;
+    color: #3D4246;
+    letter-spacing: 2px; }
+  .create-task__btn {
+    all: unset;
+    padding: 8px 57px;
+    background-color: #111111;
+    color: #fff; }
+
+@media only screen and (max-width: 735px) {
+  .create-task {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .create-task .create-task__btn-center {
+      margin-top: 20px; } }
+
+.banner {
+  background-color: #f9f0ff; }
+  .banner__img {
+    height: auto;
+    width: 90%; }
+  .banner__container {
+    padding-left: 8rem;
+    padding-right: 3rem;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .banner__iconImages {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
+  .banner__large-img {
+    filter: hue-rotate(-140deg); }
+
+.banner .banner__iconImages > img {
+  width: 100px; }
+  .banner .banner__iconImages > img:not(:last-child) {
+    margin-right: 10px; }
+
+.banner__p {
+  color: #69727B; }
+
+.banner__goToCatalog {
+  padding: 10px 22px;
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .banner__goToCatalog .arow {
+    color: #6A1B9A;
+    font-weight: bold; }
+
+@media (max-width: 884px) {
+  .banner {
+    background-color: #f9f0ff; }
+    .banner__top {
+      text-align: center; }
+    .banner__img {
+      height: 380px;
+      width: 100%; }
+    .banner__p {
+      text-align: center; }
+    .banner__iconImages {
+      justify-content: center; }
+      .banner__iconImages img {
+        padding-top: 20px; }
+  .col-6.banner__container {
+    padding-left: 3rem;
+    padding-right: 1rem; }
+  .banner__goToCatalog {
+    padding: 8px 22px;
+    background-color: white;
+    border: 1px solid;
+    height: 38px;
+    font-size: 12px; } }
+
+.statistic {
+  background-color: #f9f0ff; }
+  .statistic__rating {
+    padding: 60px 150px 40px;
+    margin: auto; }
+    .statistic__rating__color1 {
+      color: #6A1B9A; }
+    .statistic__rating__color2 {
+      color: #69727B; }
+    .statistic__rating__img {
+      text-align: center;
+      padding-bottom: 10px; }
+    .statistic__rating__font {
+      font-weight: 400;
+      letter-spacing: 3px; }
+  .statistic__rating .rate1 {
+    margin: auto;
+    text-align: center; }
+  .statistic__rating .rate2 {
+    margin: auto; }
+  .statistic__number-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .statistic__number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+  .statistic__number-item {
+    min-width: 25%;
+    margin: 35px 0 !important; }
+  .statistic__bottom {
+    justify-content: center;
+    align-items: center; }
+
+@media (max-width: 884px) {
+  .statistic {
+    background-color: #f9f0ff; }
+    .statistic__rating {
+      padding: 20px 90px 20px;
+      margin: auto; }
+      .statistic__rating__color1 {
+        color: #6A1B9A; }
+      .statistic__rating__color2 {
+        color: #69727B; }
+      .statistic__rating__img {
+        text-align: center;
+        padding-bottom: 10px; }
+      .statistic__rating__font {
+        font-size: 13px; }
+    .statistic__rating .rate1 {
+      margin: auto;
+      text-align: center; }
+    .statistic__rating .rate2 {
+      margin: auto; } }
+
 .process__top {
   margin-bottom: 2rem; }
 
@@ -252,8 +401,7 @@ body {
       flex-direction: column; } }
 
 .footer {
-  margin-top: 5rem;
-  background-color: #f9f0ff;
+  background-color: #EFEFEF;
   position: relative;
   overflow-y: hidden !important; }
   .footer::before {
