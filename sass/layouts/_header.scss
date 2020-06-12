@@ -10,6 +10,7 @@
             max-width: 250px;
             img {
                 width: 100%;
+                filter: hue-rotate(-150deg);
             }
         }
         .header__menu {
