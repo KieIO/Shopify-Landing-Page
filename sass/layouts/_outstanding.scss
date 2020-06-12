@@ -6,7 +6,7 @@
         &__content1 {
             margin-bottom: 100px;
             &__left1 {
-                padding-right: 100px !important;
+                padding-right: 10% !important;
                 img {
                     width: 100%;
                 }
@@ -64,9 +64,50 @@
             }
 
             &__right2 {
-                padding-left: 100px !important;
+                padding-left: 10% !important;
                 img {
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .outstanding {
+        padding-left: 50px;
+        padding-right: 50px;
+        &__wrapper {
+            &__content1 {
+                text-align: center;
+                margin-bottom: 50px;
+                &__left1 {
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                    order: 0 !important;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__right1 {
+                    order: 10 !important;
+                    margin-top: 20px;
+                }
+            }
+            &__content2 {
+                text-align: center;
+                margin-bottom: 50px;
+                &__left2 {
+                    order: 10 !important;
+                    margin-top: 20px;
+                }
+                &__right2 {
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                    order: 0 !important;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
