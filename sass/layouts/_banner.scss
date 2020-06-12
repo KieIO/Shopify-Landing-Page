@@ -1,3 +1,4 @@
+
 .banner {
     background-color: $color-primary-light;
 
@@ -18,6 +19,9 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+    }
+    &__large-img {
+        filter: hue-rotate(-140deg);
     }
 }
 .banner .banner__iconImages > img {

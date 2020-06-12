@@ -53,6 +53,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row; }
+  .banner__large-img {
+    filter: hue-rotate(-140deg); }
 
 .banner .banner__iconImages > img {
   width: 100px; }
