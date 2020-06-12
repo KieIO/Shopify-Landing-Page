@@ -114,7 +114,8 @@ body {
       .outstanding__wrapper__content1__right1__text1 p {
         color: #69727b; }
       .outstanding__wrapper__content1__right1__text1 a {
-        font-size: 13px; }
+        font-size: 13px;
+        cursor: pointer; }
   .outstanding__wrapper__content2 {
     margin-bottom: 100px; }
     .outstanding__wrapper__content2__left2 {
@@ -132,7 +133,8 @@ body {
       .outstanding__wrapper__content2__left2__text2 p {
         color: #69727b; }
       .outstanding__wrapper__content2__left2__text2 a {
-        font-size: 13px; }
+        font-size: 13px;
+        cursor: pointer; }
     .outstanding__wrapper__content2__right2 {
       padding-left: 10% !important; }
       .outstanding__wrapper__content2__right2 img {
