@@ -1,0 +1,109 @@
+
+.problem{
+    width:100%;padding:60px 150px
+}
+.outer-most{
+    padding:60px 150px;
+    .problem_header{
+        text-align: center;        
+        font-size: 40px;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-transform: capitalize;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.solution-wrapper{
+    display:flex;
+    .about-us-box
+    {
+       padding: 25px;
+       width: 100%;
+    }
+    .about-us-box-inner body
+    {
+       font-size: 14px;
+       font-family: Futura,sans-serif;
+       font-style: normal;
+       font-weight: 400;
+       color: $color-gray-dark;
+       line-height: 1.5;
+    }
+    .about-us-box .icon-wrap img.iCon{
+       width:101%
+    }
+    .about-us-box .icon-wrap{
+       width: 80px;
+       height: 80px;
+       background: $color-primary-light;
+       padding: 14px;
+       border-radius: 50px;
+    }
+    .about-us-box strong{
+       display: block;
+       font-size: 25px;
+       line-height: 25px;
+       margin-top: 15px;
+       letter-spacing: .5px;
+    }
+    .about-us-box p{
+       margin-top: 15px;
+       font-size: 16px;
+    }
+}
+.problem-button{
+    text-align: center;
+    margin-top: 40px;
+    .button{
+        padding: 10px 50px; 
+        color: #fff;
+        border: 1px solid $color-primary;
+            background: $color-primary;
+            max-width: 300px;
+            margin: auto;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        &:hover{
+            border: 1px solid $color-primary;
+            background: transparent;
+        }
+        &:hover a{
+            color: #222;
+        }
+    }
+}
+@media (max-width: 750px)
+{
+    .problem{
+        padding: 60px 15px;
+    }
+    .solution-wrapper{
+        flex-wrap: wrap;
+        .about-us-box{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 749px)
+{
+    h2{
+        font-size: 1.28571em;
+    }
+}
+@media (max-width: 769px)
+{
+    .problem{
+        padding: 60px 40px;
+    }
+    .problem-button{
+    .button{
+            text-align: center;
+            padding: 10px 30px;
+            font-size: small;
+        }
+    }
+}
