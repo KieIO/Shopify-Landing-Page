@@ -676,9 +676,11 @@ body {
   display: flex; }
   .category-wrapper .image {
     width: 25%;
-    margin-right: 25px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-right: 25px; }
+    .category-wrapper .image:last-child {
+      margin-right: 0; }
     .category-wrapper .image img {
       max-width: 100%;
       border: 0; }
