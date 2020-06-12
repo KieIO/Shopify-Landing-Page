@@ -38,7 +38,8 @@
         font-size: 12px;
         letter-spacing: .5px;
         text-transform: uppercase;
-        transition: .5s;
+        transition: .5s;    
+        text-decoration: none !important;
         &:hover{
             color: $color-primary-light;
             background: #3c3c3c;
