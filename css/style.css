@@ -417,7 +417,9 @@ body {
 
 .banner {
   background-color: #f9f0ff;
-  padding-top: 20px; }
+  padding-top: 20px;
+  width: 100%;
+  margin: 0 !important; }
   .banner__top {
     text-align: left; }
     .banner__top h2 {
@@ -440,6 +442,9 @@ body {
     flex-direction: row; }
     .banner__iconImages img {
       margin-right: 20px; }
+  .banner__large-img {
+    width: 100%;
+    object-fit: cover; }
   .banner__goToCatalog {
     padding: 10px 22px;
     margin-bottom: 30px;
