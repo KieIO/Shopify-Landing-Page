@@ -27,15 +27,15 @@
         display: flex;
     }
     &__col {
-        padding: .8rem .8rem 0;
+        padding: 0.8rem 0.8rem 0;
         padding-top: 10rem;
 
         &--1 {
             width: 26%;
         }
-        &--2 {
-            width: 30%;
-        }
+        // &--2 {
+        //     width: 30%;
+        // }
         &--3 {
             width: 34%;
             padding-top: 0;
@@ -52,7 +52,6 @@
     }
 }
 
-
 @media only screen and (max-width: 790px) {
     .footer {
         width: 100%;
@@ -63,17 +62,26 @@
             flex-direction: column;
             width: 98%;
         }
-        &__col  {
+        &__col {
             width: 100%;
             &--2 {
                 padding-top: 3rem;
             }
         }
         &__copy-right {
-                all: unset;
-                 color: $color-gray-light;
-        font-size: 0.7rem;
-        letter-spacing: 1px;
+            all: unset;
+            color: $color-gray-light;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            margin-left: 2%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        &__copy-right {
+            right: -120px;
         }
     }
 }

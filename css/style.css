@@ -131,7 +131,8 @@ body {
   background-color: #121212;
   color: #fff;
   letter-spacing: 1px;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  position: relative; }
   .signup-form__content {
     padding: 0 3rem; }
   .signup-form__title {
@@ -167,7 +168,9 @@ body {
     justify-content: center;
     align-items: center; }
     .signup-form__bottom__left {
-      display: flex; }
+      display: flex;
+      position: relative;
+      overflow-y: auto; }
       .signup-form__bottom__left div {
         padding-right: 8px; }
   .signup-form__review__title {
@@ -197,14 +200,15 @@ body {
   .signup-form__google {
     margin-top: 2rem; } }
 
-.rating-star__star {
-  text-align: center; }
-  .rating-star__star span {
-    color: #e7382b;
-    margin-right: -7px; }
-
-.rating-star__text {
-  font-size: 0.7rem; }
+.rating-star {
+  min-width: 80px; }
+  .rating-star__star {
+    text-align: center; }
+    .rating-star__star span {
+      color: #e7382b;
+      margin-right: -7px; }
+  .rating-star__text {
+    font-size: 0.7rem; }
 
 @media only screen and (max-width: 735px) {
   .rating-star__star {
@@ -272,12 +276,10 @@ body {
   .footer__menu {
     display: flex; }
   .footer__col {
-    padding: .8rem .8rem 0;
+    padding: 0.8rem 0.8rem 0;
     padding-top: 10rem; }
     .footer__col--1 {
       width: 26%; }
-    .footer__col--2 {
-      width: 30%; }
     .footer__col--3 {
       width: 34%;
       padding-top: 0; }
@@ -306,4 +308,9 @@ body {
       all: unset;
       color: #69727b;
       font-size: 0.7rem;
-      letter-spacing: 1px; } }
+      letter-spacing: 1px;
+      margin-left: 2%; } }
+
+@media only screen and (max-width: 1000px) {
+  .footer__copy-right {
+    right: -120px; } }
