@@ -7,18 +7,34 @@ body {
   font-family: 'Nunito', sans-serif; }
 
 .create-task {
-  background-color: #f9f0ff; }
+  background-color: #f9f0ff;
+  justify-content: center;
+  align-items: center; }
   .create-task__padding {
     padding: 40px;
     margin: 0; }
   .create-task__btn-center {
     text-align-last: center; }
   .create-task__text {
-    letter-spacing: 6px; }
-  .create-task__text-fontsize {
+    letter-spacing: 5px;
     font-size: 1.3rem; }
+  .create-task__text-fontsize {
+    font-size: 1.3rem;
+    color: #3D4246;
+    letter-spacing: 2px; }
   .create-task__btn {
-    padding: 8px; }
+    all: unset;
+    padding: 8px 57px;
+    background-color: #111111;
+    color: #fff; }
+
+@media only screen and (max-width: 735px) {
+  .create-task {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .create-task .create-task__btn-center {
+      margin-top: 20px; } }
 
 .banner {
   background-color: #f9f0ff; }
@@ -93,11 +109,28 @@ body {
     .statistic__rating__img {
       text-align: center;
       padding-bottom: 10px; }
+    .statistic__rating__font {
+      font-weight: 400;
+      letter-spacing: 3px; }
   .statistic__rating .rate1 {
     margin: auto;
     text-align: center; }
   .statistic__rating .rate2 {
     margin: auto; }
+  .statistic__number-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .statistic__number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+  .statistic__number-item {
+    min-width: 25%;
+    margin: 35px 0 !important; }
+  .statistic__bottom {
+    justify-content: center;
+    align-items: center; }
 
 @media (max-width: 884px) {
   .statistic {

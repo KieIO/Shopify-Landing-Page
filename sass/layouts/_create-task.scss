@@ -1,5 +1,7 @@
 .create-task{
     background-color: $color-primary-light;
+    justify-content: center;
+    align-items: center;
     
     &__padding{
         padding: 40px;
@@ -11,36 +13,33 @@
     }
 
     &__text{
-        letter-spacing: 6px;
+        letter-spacing: 5px;
+        font-size: 1.3rem;
     }
 
     &__text-fontsize {
         font-size: 1.3rem;
+        color: $color-gray-dark;
+        letter-spacing: 2px;
     }
 
     &__btn{
-        padding: 8px;
+        all: unset;
+        padding: 8px 57px;
+        background-color: #111111;
+        color: #fff
+
     }
 }
 
+@media only screen and( max-width: 735px) {
+    .create-task {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & &__btn-center {
+            margin-top: 20px;
 
-// .create-task__padding{
-//     padding: 40px;
-//     margin: 0;
-// }
-
-// .create-task__btn-center{
-//     text-align-last: center;
-// }
-
-// .create-task__text{
-//     letter-spacing: 6px;
-// }
-
-// strong.create-task__text-fontsize {
-//     font-size: 1.3rem;
-// }
-
-// .create-task__btn{
-//     padding: 8px;
-// }
+        }
+    }
+}
