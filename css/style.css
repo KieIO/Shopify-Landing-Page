@@ -9,6 +9,10 @@ body {
 .section-with-padding {
   padding: 0 150px; }
 
+@media (max-width: 950px) {
+  .section-with-padding {
+    padding: 0 40px; } }
+
 .process-item {
   margin-top: 2rem; }
   .process-item:not(:last-child) {
@@ -405,14 +409,23 @@ body {
     all: unset;
     padding: 8px 57px;
     background-color: #111111;
-    color: #fff; }
+    color: #fff;
+    transition: all .2s !important; }
+    .create-task__btn span {
+      transition: all .2s; }
+    .create-task__btn:hover {
+      background-color: #fff;
+      border: 1px solid #111111;
+      cursor: pointer; }
+    .create-task__btn:hover span {
+      color: #111111; }
 
 @media only screen and (max-width: 735px) {
   .create-task {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .create-task .create-task__btn-center {
+    .create-task__btn-center {
       margin-top: 20px; } }
 
 .banner {
@@ -437,13 +450,13 @@ body {
     padding-top: 40px;
     display: flex;
     align-items: center;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 20px; }
     .banner__iconImages img {
-      margin-right: 20px; }
+      margin-right: 10%; }
   .banner__img {
     height: auto;
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
   .banner__large-img {
     float: right;
     width: 100%; }
@@ -468,15 +481,16 @@ body {
     margin-right: 10px; }
 
 @media (max-width: 884px) {
+  .banner__top h2 {
+    font-size: 2.7rem; } }
+
+@media (max-width: 950px) {
   .banner {
     background-color: #f9f0ff; }
     .banner__top {
       text-align: center; }
       .banner__top h2 {
         font-size: 2rem; }
-    .banner__img {
-      height: 380px;
-      width: 100%; }
     .banner__p {
       text-align: center; }
     .banner__iconImages {
@@ -631,14 +645,16 @@ body {
 
 .problem-button {
   text-align: center;
-  margin-top: 40px; }
+  margin-top: 40px;
+  cursor: pointer; }
   .problem-button .button {
     padding: 10px 50px;
     color: #fff;
     border: 1px solid #6A1B9A;
     background: #6A1B9A;
     max-width: 300px;
-    margin: auto; }
+    margin: auto;
+    transition: all .3s !important; }
     .problem-button .button a {
       text-decoration: none;
       color: #fff; }

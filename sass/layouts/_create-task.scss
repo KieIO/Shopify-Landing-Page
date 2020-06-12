@@ -27,7 +27,20 @@
         all: unset;
         padding: 8px 57px;
         background-color: #111111;
-        color: #fff
+        color: #fff;
+        transition: all .2s !important;
+        span {
+            transition: all .2s;
+        }
+        &:hover {
+            background-color: #fff;
+            border: 1px solid #111111;
+            cursor: pointer;
+        }
+        &:hover span{
+            color: #111111;
+
+        }
 
     }
 }
@@ -37,7 +50,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        & &__btn-center {
+        &__btn-center {
             margin-top: 20px;
 
         }
