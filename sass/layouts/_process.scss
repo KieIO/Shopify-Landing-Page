@@ -1,0 +1,35 @@
+.process {
+    &__top {
+        margin-bottom: 2rem;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        font-size: $font-size-heading;
+        color: $color-gray-dark;
+        &::after {
+            content: "";
+            display: block;
+            background: $color-primary-light-2;
+            width: 50px;
+            height: 2px;
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+        }
+    }
+    &__description {
+        text-align: center;
+        color: $color-gray-light;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 750px) {
+            flex-direction: column;
+        }
+    }
+}

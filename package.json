@@ -7,7 +7,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ly, Dung, Truc",
+  "author": "Ly, Dung, Truc, Nhan",
   "license": "ISC",
   "dependencies": {
     "live-server": "^1.2.1",
