@@ -4,9 +4,16 @@
   box-sizing: inherit;
 }
 
-// html {
-// }
-
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+.section-with-padding {
+  padding: 0 150px;
+}
+
+@media (max-width: 950px) {
+  .section-with-padding {
+    padding: 0 40px;
+  }
 }

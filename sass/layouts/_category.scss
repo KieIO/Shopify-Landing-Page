@@ -2,15 +2,18 @@
 
 .category{
     width: 100%;
-    padding: 150px 10px 0;
+    padding: 30px 10px 0;
 }
 .category-wrapper{
     display: flex;
     .image{
         width: 25%;
-        margin-right: 25px;
         position: relative;
         overflow: hidden;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
         img {
             max-width: 100%;
             border: 0;

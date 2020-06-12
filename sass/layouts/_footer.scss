@@ -1,7 +1,8 @@
 .footer {
     background-color: $color-gray-light-2;
     position: relative;
-    overflow-y: hidden !important;
+    overflow: hidden;
+    width: 100%;
     &::before {
         z-index: 1;
         content: "";
