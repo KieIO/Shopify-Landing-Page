@@ -57,4 +57,13 @@
             } 
         }
     }
-  }
+}
+
+@media (max-width: 1254px) {
+    .header__menu {
+        ul {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+}

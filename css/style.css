@@ -265,6 +265,11 @@ body {
       .header__navbar .header__menu ul li a {
         padding-left: 50px !important; } }
 
+@media (max-width: 1254px) {
+  .header__menu ul {
+    flex-wrap: wrap;
+    justify-content: flex-end; } }
+
 .customer {
   background: #f9f0ff;
   display: flex;
