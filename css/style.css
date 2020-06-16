@@ -230,8 +230,6 @@ body {
   background-color: #f9f0ff;
   border-bottom: 1px solid #e8e9eb; }
   .header .header__navbar {
-    width: 80%;
-    margin: auto;
     display: flex !important;
     justify-content: space-between; }
     .header .header__navbar a {
