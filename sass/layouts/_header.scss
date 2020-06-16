@@ -1,9 +1,13 @@
 .header {
     background-color: $color-primary-light;
     border-bottom: 1px solid #e8e9eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 85px;
     .header__navbar {
-        width: 80%;
-        margin: auto;
         display: flex !important;
         justify-content: space-between;
         a {
@@ -57,4 +61,13 @@
             } 
         }
     }
-  }
+}
+
+@media (max-width: 1254px) {
+    .header__menu {
+        ul {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+}

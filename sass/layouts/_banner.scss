@@ -1,8 +1,7 @@
 
 .banner {
     background-color: $color-primary-light;
-    padding-top: 20px;
-    width: 100%;
+    padding-top: 85px;
     margin: 0 !important;
     &__top  {
          text-align: left;
@@ -89,11 +88,6 @@
             h2 {
                 font-size: 2rem;
             }
-        }
-
-        &__img {
-            // height: 380px;
-            // width: 100%;
         }
         &__p {
             text-align: center;
