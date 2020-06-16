@@ -261,10 +261,6 @@ body {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important; }
-    .header__navbar a {
-      padding-left: 50px; }
-    .header__navbar .navbar-toggler {
-      margin-right: 50px; }
     .header__navbar .header__menu ul li {
       border-top: 1px solid #e8e9eb; }
       .header__navbar .header__menu ul li .last-item {
