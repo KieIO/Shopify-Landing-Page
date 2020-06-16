@@ -7,11 +7,11 @@ body {
   font-family: 'Nunito', sans-serif; }
 
 .section-with-padding {
-  padding: 0 150px; }
+  padding: 0 8%; }
 
 @media (max-width: 950px) {
   .section-with-padding {
-    padding: 0 40px; } }
+    padding: 0 5%; } }
 
 .process-item {
   margin-top: 2rem; }
@@ -434,7 +434,6 @@ body {
 .banner {
   background-color: #f9f0ff;
   padding-top: 20px;
-  width: 100%;
   margin: 0 !important; }
   .banner__top {
     text-align: left; }

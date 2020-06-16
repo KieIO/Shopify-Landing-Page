@@ -9,11 +9,12 @@ body {
 }
 
 .section-with-padding {
-  padding: 0 150px;
+  padding: 0 8%;
+
 }
 
 @media (max-width: 950px) {
   .section-with-padding {
-    padding: 0 40px;
+    padding: 0 5%;
   }
 }
