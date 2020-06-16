@@ -228,7 +228,13 @@ body {
 
 .header {
   background-color: #f9f0ff;
-  border-bottom: 1px solid #e8e9eb; }
+  border-bottom: 1px solid #e8e9eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  max-height: 85px; }
   .header .header__navbar {
     display: flex !important;
     justify-content: space-between; }
@@ -431,7 +437,7 @@ body {
 
 .banner {
   background-color: #f9f0ff;
-  padding-top: 20px;
+  padding-top: 85px;
   margin: 0 !important; }
   .banner__top {
     text-align: left; }

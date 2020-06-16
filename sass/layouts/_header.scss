@@ -1,6 +1,12 @@
 .header {
     background-color: $color-primary-light;
     border-bottom: 1px solid #e8e9eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 85px;
     .header__navbar {
         display: flex !important;
         justify-content: space-between;
