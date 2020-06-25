@@ -684,10 +684,12 @@ body {
     font-size: 25px;
     line-height: 25px;
     margin-top: 15px;
-    letter-spacing: .5px; }
+    letter-spacing: .5px;
+    color: #3D4246; }
   .solution-wrapper .about-us-box p {
     margin-top: 15px;
-    font-size: 16px; }
+    font-size: 15px;
+    color: #69727B; }
 
 .problem-button {
   text-align: center;
