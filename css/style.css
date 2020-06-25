@@ -457,7 +457,8 @@ body {
 
 .banner {
   background-color: #f9f0ff;
-  padding-top: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   margin: 0 !important; }
   .banner__top {
@@ -521,8 +522,10 @@ body {
     margin-right: 10px; }
 
 @media (max-width: 884px) {
-  .banner__top h2 {
-    font-size: 2.7rem; } }
+  .banner {
+    padding-bottom: 0; }
+    .banner__top h2 {
+      font-size: 2.7rem; } }
 
 @media (max-width: 950px) {
   .banner {
