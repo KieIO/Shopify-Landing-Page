@@ -6,7 +6,8 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    max-height: 85px;
+    // max-height: 85px;
+    max-height: $max-height-header;
     .header__navbar {
         display: flex !important;
         justify-content: space-between;

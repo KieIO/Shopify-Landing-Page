@@ -261,7 +261,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  max-height: 85px; }
+  max-height: 8.5rem; }
   .header .header__navbar {
     display: flex !important;
     justify-content: space-between; }
@@ -460,7 +460,7 @@ body {
 
 .banner {
   background-color: #f9f0ff;
-  padding-top: 2rem;
+  padding-top: 9rem;
   padding-bottom: 2rem;
   width: 100%;
   margin: 0 !important; }
@@ -523,6 +523,10 @@ body {
   width: 100px; }
   .banner .banner__iconImages > img:not(:last-child) {
     margin-right: 10px; }
+
+@media (max-width: 884px) {
+  .banner {
+    padding-top: 6rem; } }
 
 @media (max-width: 884px) {
   .banner {

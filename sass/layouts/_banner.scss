@@ -1,6 +1,6 @@
 .banner {
     background-color: $color-primary-light;
-    padding-top: 2rem;
+    padding-top: 9rem;
     padding-bottom: 2rem;
     width: 100%;
     margin: 0 !important;
@@ -86,6 +86,12 @@
 
 @media (max-width: 884px) {
     .banner {
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width: 884px) {
+    .banner {
         padding-bottom: 0;
         &__top {
             h2 {
@@ -110,7 +116,6 @@
         &__iconImages {
             justify-content: center;
             img {
-                //    width: 70px;
                 padding-top: 20px;
             }
         }
