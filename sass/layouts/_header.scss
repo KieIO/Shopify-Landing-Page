@@ -39,21 +39,26 @@
 }
 
 @media (max-width: 767px) {
+    .header {
+        padding: 0;
+        background-color: #fff;
+    }
     .header__navbar {
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         a {
-            // padding-left: 20px;
+            padding-left: 20px;
         }
         .navbar-toggler {
-            // margin-right: 20px;
+            margin-right: 20px;
         }
         .header__menu {
+            background-color: #fff;
             ul li {
                 border-top: 1px solid #e8e9eb;
                 .last-item {
-                    background-color: $color-primary-light !important;
+                    background-color: #fff !important;
                     color: $color-gray-dark !important;
                 }
                 a {
