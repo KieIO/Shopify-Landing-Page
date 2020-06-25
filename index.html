@@ -65,13 +65,14 @@
                     theme tweaks, adding
                     functionality, custom coding, graphics and much more.</p>
             </div>
-            <div class="banner__form-subscribe">
-                <!-- <form> -->
-                        <input class="custom-input" placeholder="Enter your email"/>
-                        <button class="custom-button">
+            <div class="banner__form-subscribe-wrap">
+                <div class="banner__form-subscribe">
+                        <input class="custom-input" id="email-top" placeholder="Enter your email"/>
+                        <button class="custom-button" onclick="onSubmitFormTop()">
                             Subscribe
                         </button>
-                <!-- </form> -->
+                </div>
+                <div class="" id="banner__msg-subscribe"></div>
             </div>
         </div>
         <div class="col-md-6 col-12">
@@ -623,6 +624,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./signup.js"></script>
+    <script src="./constant.js"></script>
 </body>
 
 </html>

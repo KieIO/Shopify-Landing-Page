@@ -1,1 +1,1 @@
-export const API_SIGN_UP = 'https://formspree.io/xzbjazdp'
+const API_SIGN_UP = 'https://formspree.io/xzbjazdp'

@@ -240,12 +240,13 @@ body {
   background-color: rgba(106, 27, 154, 0.8); }
 
 .custom-input {
+  flex: 1;
   all: none;
   border: none;
   outline: none;
   height: 2.5rem;
   background-color: #f0f0f0;
-  padding: 0 2rem;
+  padding: .5rem 2rem;
   border-radius: 3px;
   transition: all 0.2s; }
 
@@ -486,6 +487,33 @@ body {
   .banner__large-img {
     float: right;
     width: 100%; }
+  .banner__form-subscribe-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .banner__form-subscribe {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .banner__msg-subscribe {
+    width: 100%;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-out; }
+    .banner__msg-subscribe--danger {
+      color: #721c24;
+      background-color: #f8d7da;
+      border-color: #f5c6cb; }
+    .banner__msg-subscribe--success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb; }
 
 .banner .banner__iconImages > img {
   width: 100px; }
@@ -512,6 +540,12 @@ body {
   .col-6.banner__container {
     padding-left: 3rem;
     padding-right: 1rem; } }
+
+@media (max-width: 500px) {
+  .banner__form-subscribe {
+    flex-direction: column; }
+    .banner__form-subscribe .custom-button {
+      margin-top: 1rem; } }
 
 .statistic {
   background-color: #f9f0ff;
