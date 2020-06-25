@@ -1,0 +1,14 @@
+.custom-button {
+    height: 2.5rem;
+    padding: 0 1.8rem;
+    background-color: $color-primary;
+    color: $color-primary-light;
+    min-width: 9rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: rgba($color-primary, .8);
+}

@@ -1,20 +1,17 @@
-
 .banner {
     background-color: $color-primary-light;
     padding-top: 20px;
     width: 100%;
     margin: 0 !important;
-    &__top  {
-         text-align: left;
-         h2 {
-             font-size: 2.9rem;
-             font-weight: bold;
-             line-height: 1.2;
-
-         }
+    &__top {
+        text-align: left;
+        h2 {
+            font-size: 2.9rem;
+            font-weight: bold;
+            line-height: 1.2;
+        }
     }
 
-   
     &__container {
         padding-left: 8rem;
         padding-right: 3rem;
@@ -29,12 +26,12 @@
         align-items: center;
         flex-direction: row;
         margin-bottom: 20px;
-         img {
-                //    width: 70px;
-                margin-right: 10%;
-            }
+        img {
+            //    width: 70px;
+            margin-right: 10%;
+        }
     }
-     &__img {
+    &__img {
         height: auto;
         width: 100%;
         // object-fit: cover;
@@ -45,24 +42,24 @@
         width: 100%;
     }
 
-    &__goToCatalog {
-        //margin:0 3rem;
-        padding: 10px 22px;
-        margin-bottom: 30px;
-        background-color: white;
-        border: 1px solid;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        .arow {
-            color: $color-primary;
-            font-weight: bold;
-        }
-    &__p {
-        color: $color-gray-light;
-    }   
-    }
+    // &__goToCatalog {
+    //     //margin:0 3rem;
+    //     padding: 10px 22px;
+    //     margin-bottom: 30px;
+    //     background-color: white;
+    //     border: 1px solid;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     cursor: pointer;
+    //     .arow {
+    //         color: $color-primary;
+    //         font-weight: bold;
+    //     }
+    //     &__p {
+    //         color: $color-gray-light;
+    //     }
+    // }
 }
 .banner .banner__iconImages > img {
     width: 100px;
@@ -84,7 +81,7 @@
 @media (max-width: 950px) {
     .banner {
         background-color: $color-primary-light;
-        &__top  {
+        &__top {
             text-align: center;
             h2 {
                 font-size: 2rem;
@@ -111,13 +108,13 @@
         padding-right: 1rem;
     }
 
-    .banner__goToCatalog {
-        //margin:0 3rem;
-        padding: 8px 22px;
-        background-color: white;
-        border: 1px solid;
-        // width: 155px;
-        height: 38px;
-        font-size: 12px;
-    }
+    // .banner__goToCatalog {
+    //     //margin:0 3rem;
+    //     padding: 8px 22px;
+    //     background-color: white;
+    //     border: 1px solid;
+    //     // width: 155px;
+    //     height: 38px;
+    //     font-size: 12px;
+    // }
 }
