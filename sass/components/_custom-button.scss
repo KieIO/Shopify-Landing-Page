@@ -7,8 +7,14 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .custom-button:hover {
     background-color: rgba($color-primary, .8);
+}
+
+.custom-button:disabled {
+    color: #999 !important;
+    // background-color: rgb(175, 175, 175) !important;
 }

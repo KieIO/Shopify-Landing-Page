@@ -53,29 +53,29 @@
         display: flex;
         justify-content: center;
     }
-    &__msg-subscribe {
-        width: 100%;
-        margin-top: 1rem;
-        // width: fit-content;
-        // min-width: 24rem;
-        margin-top: 1rem;
-        position: relative;
-        padding: 0.3rem 1rem;
-        margin-bottom: 1rem;
-        border: 1px solid transparent;
-        border-radius: 0.25rem;
-        transition: all 0.2s ease-out;
-        &--danger {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-        &--success {
-            color: #155724;
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-    }
+    // &__msg-subscribe {
+    //     width: 100%;
+    //     margin-top: 1rem;
+    //     // width: fit-content;
+    //     // min-width: 24rem;
+    //     margin-top: 1rem;
+    //     position: relative;
+    //     padding: 0.3rem 1rem;
+    //     margin-bottom: 1rem;
+    //     border: 1px solid transparent;
+    //     border-radius: 0.25rem;
+    //     transition: all 0.2s ease-out;
+    //     &--danger {
+    //         color: #721c24;
+    //         background-color: #f8d7da;
+    //         border-color: #f5c6cb;
+    //     }
+    //     &--success {
+    //         color: #155724;
+    //         background-color: #d4edda;
+    //         border-color: #c3e6cb;
+    //     }
+    // }
 }
 .banner .banner__iconImages > img {
     width: 100px;

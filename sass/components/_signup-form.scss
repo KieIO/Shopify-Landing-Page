@@ -19,18 +19,21 @@
     }
     &__contain {
         font-size: 0.8rem;
-        form {
-            input {
-                all: unset;
-                border-bottom: 1px solid #bbb;
-                color: #fff;
-                width: 75%;
-            }
-            button {
-                all: unset;
-            }
-        }
     }
+            &__content-form {
+                input {
+                    all: unset;
+                    border-bottom: 1px solid #bbb;
+                    color: #fff;
+                    width: 75%;
+                }
+                button {
+                    all: unset;
+                    &:disabled {
+                        color: #999 !important;
+                    }
+                }
+            }
     &__social {
         ul {
             display: flex;
@@ -92,11 +95,11 @@
             justify-content: space-between;
         }
         &__contain {
-            form {
-                display: flex;
-                justify-content: space-between;
-            }
         }
+        &__content-form {
+                    display: flex;
+                    justify-content: space-between;
+                }
     }
 }
 

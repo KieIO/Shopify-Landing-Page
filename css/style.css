@@ -151,13 +151,15 @@ body {
     font-size: 0.8rem; }
   .signup-form__contain {
     font-size: 0.8rem; }
-    .signup-form__contain form input {
-      all: unset;
-      border-bottom: 1px solid #bbb;
-      color: #fff;
-      width: 75%; }
-    .signup-form__contain form button {
-      all: unset; }
+  .signup-form__content-form input {
+    all: unset;
+    border-bottom: 1px solid #bbb;
+    color: #fff;
+    width: 75%; }
+  .signup-form__content-form button {
+    all: unset; }
+    .signup-form__content-form button:disabled {
+      color: #999 !important; }
   .signup-form__social ul {
     display: flex; }
     .signup-form__social ul li {
@@ -197,7 +199,7 @@ body {
     justify-content: flex-start; }
     .signup-form__bottom {
       justify-content: space-between; }
-    .signup-form__contain form {
+    .signup-form__content-form {
       display: flex;
       justify-content: space-between; } }
 
@@ -234,10 +236,14 @@ body {
   min-width: 9rem;
   outline: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .2s; }
 
 .custom-button:hover {
   background-color: rgba(106, 27, 154, 0.8); }
+
+.custom-button:disabled {
+  color: #999 !important; }
 
 .custom-input {
   flex: 1;
@@ -252,6 +258,25 @@ body {
 
 .custom-input:focus {
   background-color: #e4e4e4; }
+
+.msg-subscribe {
+  width: 100%;
+  margin-top: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-out; }
+  .msg-subscribe--danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb; }
+  .msg-subscribe--success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb; }
 
 .header {
   background-color: #f9f0ff;
@@ -509,24 +534,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center; }
-  .banner__msg-subscribe {
-    width: 100%;
-    margin-top: 1rem;
-    margin-top: 1rem;
-    position: relative;
-    padding: 0.3rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    transition: all 0.2s ease-out; }
-    .banner__msg-subscribe--danger {
-      color: #721c24;
-      background-color: #f8d7da;
-      border-color: #f5c6cb; }
-    .banner__msg-subscribe--success {
-      color: #155724;
-      background-color: #d4edda;
-      border-color: #c3e6cb; }
 
 .banner .banner__iconImages > img {
   width: 100px; }

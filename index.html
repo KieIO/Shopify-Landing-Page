@@ -68,11 +68,11 @@
             <div class="banner__form-subscribe-wrap">
                 <div class="banner__form-subscribe">
                         <input class="custom-input" id="email-top" placeholder="Enter your email"/>
-                        <button class="custom-button" onclick="onSubmitFormTop()">
+                        <button class="custom-button" id='btn-subscribe-top' onclick="onSubmitFormSignUp('email-top', 'btn-subscribe-top', 'banner__msg-subscribe')">
                             Subscribe
                         </button>
                 </div>
-                <div class="" id="banner__msg-subscribe"></div>
+                <div class="msg-subscribe" id="banner__msg-subscribe"></div>
             </div>
         </div>
         <div class="col-md-6 col-12">
@@ -530,10 +530,11 @@
                             35,000 + merchants have already joined our e-commerce advice mailing list.
                         </div>
                         <div class="signup-form__contain">
-                            <form action="post">
-                                <input type="email" name="Email" id="email" class="" placeholder="Email address">
-                                <button type="submit">Subscribe</button>
-                            </form>
+                            <div class="signup-form__content-form">
+                                <input type="email" name="Email" id="email-footer" class="" placeholder="Email address">
+                                <button type="submit" id='btn-subscribe-footer' onclick="onSubmitFormSignUp('email-footer', 'btn-subscribe-footer', 'msg-subscribe-footer')">Subscribe</button>
+                            </div>
+                            <div class="msg-subscribe" id="msg-subscribe-footer"></div>
                         </div>
                         <div class="signup-form__social">
                             <ul>

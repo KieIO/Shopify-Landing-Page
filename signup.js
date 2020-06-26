@@ -3,37 +3,39 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }   
 
-async function onSubmitFormTop() {
-    const element = document.getElementById('email-top')
-    const elementMsg = document.getElementById('banner__msg-subscribe');
+async function onSubmitFormSignUp(idInput, idBtn, idMsg) {
+    console.log(idInput, idBtn)
+    const element = document.getElementById(idInput)
+    const elementMsg = document.getElementById(idMsg);
+    const elementBtn = document.getElementById(idBtn)
+    console.log(elementMsg)
     if (element) {
+        elementBtn.disabled = true;
         const email = element.value
-        
+        elementMsg.classList.remove("msg-subscribe", "msg-subscribe--danger", "msg-subscribe--success")
+
         if (validateEmail(email)) {
-            console.log("valid: ", email)
             try {
-                const result = await onSignUp({email})
-                console.log("success: ", result)
-                elementMsg.classList.add("banner__msg-subscribe", "banner__msg-subscribe--success")
+                await onSignUp({email})
+                elementMsg.classList.add("msg-subscribe", "msg-subscribe--success")
                 elementMsg.innerText = "Successfully! Thanks for your supscription"
-            } catch {
-                elementMsg.classList.add("banner__msg-subscribe", "banner__msg-subscribe--danger")
+            } catch (err) {
+                elementMsg.classList.add("msg-subscribe", "msg-subscribe--danger")
                 elementMsg.innerText = "Something went wrong, please try later"
             }
-
-
         } else {
-            elementMsg.classList.add("banner__msg-subscribe", "banner__msg-subscribe--danger")
+            elementMsg.classList.add("msg-subscribe", "msg-subscribe--danger")
             console.log("invalid: ", email)
             if (!email) {
                 elementMsg.innerText = "Email is required"
             } else {
                 elementMsg.innerText= "Invalid email"
-            }
-            
+            } 
         }
+        setTimeout(()=>{
+            elementBtn.disabled = false;
+        }, 2000)
     }
-
 }
 
 const onSignUp = async (values) => {
