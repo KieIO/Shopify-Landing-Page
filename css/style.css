@@ -251,13 +251,13 @@ body {
   border: none;
   outline: none;
   height: 2.5rem;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: .5rem 2rem;
   border-radius: 3px;
   transition: all 0.2s; }
 
 .custom-input:focus {
-  background-color: #e4e4e4; }
+  background-color: #e4e4ff; }
 
 .msg-subscribe {
   width: 100%;
