@@ -351,9 +351,10 @@ body {
       padding-bottom: 85px; }
       .customer__wrapper .carousel-inner .carousel-item .row .col-left .show-case-image {
         width: 80% !important;
-        border-radius: 10px !important;
-        height: 300px;
-        margin: auto; }
+        max-height: 300px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 10px !important; }
       .customer__wrapper .carousel-inner .carousel-item .row .col-right {
         display: flex !important;
         flex-direction: column;
@@ -384,9 +385,8 @@ body {
     width: 10px;
     height: 10px; }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 767px) {
   .carousel-item .row .col-left .show-case-image {
-    height: 200px !important;
     margin-bottom: 50px !important; } }
 
 .outstanding {

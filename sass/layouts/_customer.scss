@@ -18,9 +18,10 @@
                     .col-left {
                         .show-case-image {
                             width: 80% !important;
-                            border-radius: 10px !important;
-                            height: 300px;
+                            max-height: 300px;
                             margin: auto;
+                            object-fit: cover;
+                            border-radius: 10px !important;
                         }
                     }
                     .col-right {
@@ -76,12 +77,12 @@
     }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 767px) {
     .carousel-item {
         .row {
             .col-left {
                 .show-case-image {
-                    height: 200px !important;
+                    // height: 200px !important;
                     margin-bottom: 50px !important;
                 }
             }
