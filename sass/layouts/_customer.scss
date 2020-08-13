@@ -8,17 +8,32 @@
     &__wrapper {
         text-align: center;
         width: 80%;
-        padding: 50px 100px
         &__title {
-            margin-bottom: 25px;
+            margin-bottom: 50px !important;
         }
         .carousel-inner {
             padding-bottom: 85px;
             .carousel-item {
+                .row {
+                    .col-left {
+                        .show-case-image {
+                            width: 80% !important;
+                            max-height: 300px;
+                            margin: auto;
+                            object-fit: cover;
+                            border-radius: 10px !important;
+                        }
+                    }
+                    .col-right {
+                        display: flex !important;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
                 .carousel-item-text {
                     .carousel-item-text-content {
-                        margin-top: 25px;
-                        font-size: 14px;
+                        font-size: 18px;
                         line-height: 26px;
                         letter-spacing: 1px;
                         color: #333;
@@ -32,32 +47,45 @@
                 .carousel-item-name {
                     h4 {
                         letter-spacing: 1px;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif ;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
                     }
                     .desc {
                         color: #69727b;
                     }
                 }
                 .carousel-item-rating {
-                    img {
-                        width: 12%;
+                    > img {
+                        width: 30%;
                     }
                 }
             }
         }
         .carousel-control-prev-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236A1B9A' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-           }
-           
-           .carousel-control-next-icon {
-             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236A1B9A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-           }
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236A1B9A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
     }
     .carousel-indicators {
         li {
             border-radius: 50%;
             width: 10px;
             height: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-item {
+        .row {
+            .col-left {
+                .show-case-image {
+                    // height: 200px !important;
+                    margin-bottom: 50px !important;
+                }
+            }
         }
     }
 }
